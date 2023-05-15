@@ -238,4 +238,15 @@ $(document).ready(function () {
         }
 
     })
+
+    var teams = window.localStorage.getItem('teams') || null;
+    teams = teams.length > 0 ? JSON.parse(teams) : [];
+
+    let selectHtml = "<option disabled selected>Select Team</option>"
+
+    for (let team of teams) {
+        selectHtml += `<option value="${team.short_name}">${team.name}</option>`
+    }
+
+    $('#from_team').html(selectHtml)
 })

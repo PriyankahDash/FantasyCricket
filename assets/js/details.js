@@ -6,13 +6,14 @@ $(document).ready(function () {
     if (team) {
         $('#team-preview').attr("src", team['image'])
         $("#team-title").text(team['name'])
-        $("#pc").text('Player Count: ' + team['player_count'])
         $("#tb").text('Top Batsman: ' + team['top_bats_man'])
         $("#tbo").text('Top Bowler: ' + team['top_bowler'])
         $("#cwc").text('Championship Won Count: ' + team['championship_wo_count'])
         let players = window.localStorage.getItem('players') || null;
         players = players.length > 0 ? JSON.parse(players) : [];
         players = players.filter(el => el.from == team.short_name);
+        $("#pc").text('Player Count: ' + players.length)
+
         let playerHtml = ''
         for (let player of players) {
             console.log(player);

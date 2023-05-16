@@ -169,4 +169,20 @@ $(document).ready(function () {
     }
 
     $('#from_team').html(selectHtml)
+
+    document.addEventListener("click", function(e) {
+        const popup = document.getElementById('my-popup2');
+        if (!popup.contains(e.target) && e.target !== document.getElementById('add_player')) {
+          $('#my-popup2').hide()
+          $('body').css('overflow', 'auto');
+        }
+      });
+
+      document.addEventListener("click", function(e) {
+        const popup = document.getElementById('my-popup');
+        if (!popup.contains(event.target) && e.target !== document.getElementById('add_team')) {
+          $('#my-popup').hide()
+          $('body').css('overflow', 'auto');
+        }
+      });
 })

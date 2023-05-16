@@ -1,165 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&amp;display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&amp;display=swap"
+      rel="stylesheet"
+    />
     <title>Fantacy Cricket</title>
     <script src="./assets/js/fontawesom.js"></script>
     <script src="./assets/js/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/slick.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav id="topbar">
-            <div id="left-menu">
-                <div id="logo"><a href="index.html"><span>Crick</span>Play</a></div>
-                <!-- <a href="#clothing-section">Clothing</a>
+      <nav id="topbar">
+        <div id="left-menu">
+          <div id="logo">
+            <a href="index.html"><span>Crick</span>Play</a>
+          </div>
+          <!-- <a href="#clothing-section">Clothing</a>
                 <a href="#accessory-section">Accessories</a> -->
-            </div>
-            <div id="search-wrapper">
-                <div class="search-input-container">
-                    <input type="text" name="text" id="search-input" class="search-input" placeholder="search...">
-                    <span class="search-icon">
-                        <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <path opacity="1" d="M14 5H20" stroke="#000" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round"></path>
-                                <path opacity="1" d="M14 8H17" stroke="#000" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round"></path>
-                                <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2"
-                                    stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                                </path>
-                                <path opacity="1" d="M22 22L20 20" stroke="#000" stroke-width="3.5"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                            </g>
-                        </svg>
-                    </span>
-                    <ul id="search-results" style="
-                    position: absolute;
-                    background-color: #f6eded;
-                    list-style: none;
-                    width: 100%;
-                ">
-
-                    </ul>
-                </div>
-                <!-- <i class="fas fa-search"></i> -->
-                <!-- <input id="search-box" type="text" name="search" placeholder="Search for Teams or Players" /> -->
-            </div>
-            <div id="right-menu">
-                <!-- <div id="cart-wrapper">
+        </div>
+        <div id="search-wrapper">
+          <div class="search-input-container">
+            <input
+              type="text"
+              name="text"
+              id="search-input"
+              class="search-input"
+              placeholder="search..."
+            />
+            <span class="search-icon">
+              <svg
+                width="19px"
+                height="19px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    opacity="1"
+                    d="M14 5H20"
+                    stroke="#000"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    opacity="1"
+                    d="M14 8H17"
+                    stroke="#000"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2"
+                    stroke="#000"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    opacity="1"
+                    d="M22 22L20 20"
+                    stroke="#000"
+                    stroke-width="3.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+            <ul
+              id="search-results"
+              style="
+                position: absolute;
+                background-color: #f6eded;
+                list-style: none;
+                width: 100%;
+              "
+            ></ul>
+          </div>
+          <!-- <i class="fas fa-search"></i> -->
+          <!-- <input id="search-box" type="text" name="search" placeholder="Search for Teams or Players" /> -->
+        </div>
+        <div id="right-menu">
+          <!-- <div id="cart-wrapper">
                     <p id="cart-count">0</p>
                     <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
                 </div> -->
-                <!-- <img src="assets/img/avatar.jpg" /> -->
-                <div class="mr-2">
-                    <button class="new-button" id="add_team">Add Team</button>
-                </div>
-                <div>
-                    <button class="new-button" id="add_player">Add Player</button>
-                </div>
-            </div>
-        </nav>
+          <!-- <img src="assets/img/avatar.jpg" /> -->
+          <div class="mr-2">
+            <button class="new-button" id="add_team">Add Team</button>
+          </div>
+          <div>
+            <button class="new-button" id="add_player">Add Player</button>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <section>
-            <div class="center">
-                <img src="https://www.traditionalgames.in/wp-content/uploads/2023/04/ipl-teams-wallpapers.jpg" alt="">
-                <img src="https://www.bigmediakart.com/wp-content/uploads/2021/02/IPL-Dream-11-new-1024x576-1.jpg" />
-
-            </div>
-        </section>
-
-        <section id="clothing-section" class="homepage-section">
-            <h3 class="section-heading">Teams</h3>
-
-            <div id="teams-grid" class="product-grid">
-
-
-
-            </div>
-        </section>
-
-        <div id="my-popup">
-            <form class="my-form" id="my-form">
-                <label for="name">Team Name:</label>
-                <input type="text" id="team_name" name="team_name" required>
-
-                <label for="name">Team Short Name:</label>
-                <input type="text" id="team_short_name" name="team_short_name" required>
-
-                <label for="name">Team Image URL:</label>
-                <input type="text" id="team_img" name="team_img" required>
-
-                <label for="name">Player Count</label>
-                <input type="number" id="player_count" name="player_count" required>
-
-                <label for="name">Top Batsman</label>
-                <input type="text" id="top_batsman" name="top_batsman" required>
-
-                <label for="name">Top Bowler</label>
-                <input type="text" id="top_bowler" name="top_bowler" required>
-
-                <label for="name">Championship Won Count</label>
-                <input type="text" id="championship_wo_count" name="championship_wo_count" required>
-
-
-                <div class="d-flex" style="display: flex; justify-content: space-between;">
-                    <button type="submit">Submit</button>
-                    <button type="button" class="cancel_button" id="close-popup">Close</button>
-                </div>
-
-
-            </form>
+      <section>
+        <div class="center">
+          <img
+            src="https://www.traditionalgames.in/wp-content/uploads/2023/04/ipl-teams-wallpapers.jpg"
+            alt=""
+          />
+          <img
+            src="https://www.bigmediakart.com/wp-content/uploads/2021/02/IPL-Dream-11-new-1024x576-1.jpg"
+          />
         </div>
+      </section>
 
-        <div id="my-popup2">
-            <form class="my-form" id="my-form2">
-                <label for="name">Player Name:</label>
-                <input type="text" id="player_name" name="player_name" required>
+      <section id="clothing-section" class="homepage-section">
+        <h3 class="section-heading">Teams</h3>
 
-                <label for="name">From Team Short Name:</label>
-                <select name="from_team" id="from_team" required>
+        <div id="teams-grid" class="product-grid"></div>
+      </section>
 
-                </select>
+      <div id="my-popup">
+        <form class="my-form" id="my-form">
+          <div
+            class="d-flex"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <h3 style="margin: 0">Add Team</h3>
+            <i
+              class="fa fa-times cancel_button"
+              aria-hidden="true"
+              style="background-color: transparent; color: black"
+            ></i>
+          </div>
+          <hr />
+          <label for="name">Team Name:</label>
+          <input type="text" id="team_name" name="team_name" required />
 
-                <label for="name">Player Image URL:</label>
-                <input type="text" id="player_img" name="player_img" required>
+          <label for="name">Team Short Name:</label>
+          <input
+            type="text"
+            id="team_short_name"
+            name="team_short_name"
+            required
+          />
 
-                <label for="name">Price</label>
-                <input type="text" id="price" name="price" required>
+          <label for="name">Team Image URL:</label>
+          <input type="text" id="team_img" name="team_img" required />
 
-                <label for="name">Description(Type of Player)</label>
-                <input type="text" id="description" name="description" required>
+          <label for="name">Player Count</label>
+          <input type="number" id="player_count" name="player_count" required />
 
-                <label for="Status">Status</label>
-                <select name="status" id="status" required>
-                    <option value="true">Playing</option>
-                    <option value="false">Not Playing</option>
-                </select>
+          <label for="name">Top Batsman</label>
+          <input type="text" id="top_batsman" name="top_batsman" required />
 
-                <div class="d-flex" style="display: flex; justify-content: space-between;">
-                    <button type="submit">Submit</button>
-                    <button type="button" class="cancel_button" id="close-popup">Close</button>
-                </div>
-            </form>
-        </div>
+          <label for="name">Top Bowler</label>
+          <input type="text" id="top_bowler" name="top_bowler" required />
+
+          <label for="name">Championship Won Count</label>
+          <input
+            type="text"
+            id="championship_wo_count"
+            name="championship_wo_count"
+            required
+          />
+
+          <div
+            class="d-flex"
+            style="display: flex; justify-content: space-between"
+          >
+            <button type="submit">Submit</button>
+            <button type="button" class="cancel_button" id="close-popup">
+              Close
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div id="my-popup2">
+        <form class="my-form" id="my-form2">
+          <div
+            class="d-flex"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <h3 style="margin: 0">Add Player</h3>
+            <i
+              class="fa fa-times cancel_button"
+              aria-hidden="true"
+              style="background-color: transparent; color: black"
+            ></i>
+          </div>
+          <hr />
+          <label for="name">Player Name:</label>
+          <input type="text" id="player_name" name="player_name" required />
+
+          <label for="name">From Team Short Name:</label>
+          <select name="from_team" id="from_team" required></select>
+
+          <label for="name">Player Image URL:</label>
+          <input type="text" id="player_img" name="player_img" required />
+
+          <label for="name">Price</label>
+          <input type="text" id="price" name="price" required />
+
+          <label for="name">Description(Type of Player)</label>
+          <input type="text" id="description" name="description" required />
+
+          <label for="Status">Status</label>
+          <select name="status" id="status" required>
+            <option value="true">Playing</option>
+            <option value="false">Not Playing</option>
+          </select>
+
+          <div
+            class="d-flex"
+            style="display: flex; justify-content: space-between"
+          >
+            <button type="submit">Submit</button>
+            <button type="button" class="cancel_button" id="close-popup">
+              Close
+            </button>
+          </div>
+        </form>
+      </div>
     </main>
 
     <script src="./assets/js/base.js"></script>
     <script src="./assets/js/index.js"></script>
     <script type="text/javascript" src="./assets/js/slick.min.js"></script>
-</body>
-
+  </body>
 </html>
